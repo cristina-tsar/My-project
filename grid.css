@@ -1,0 +1,230 @@
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; 
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+[class*='col-'] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.search {
+    display: flex;
+ }
+.search .type-buttom {
+    flex-direction: row;
+}
+
+@media(min-width:768px){
+    .container {
+        max-width: 720px;
+    }
+    .col-md-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+    .col-md-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-md-4 {
+        flex: 0 0 33.33334%;
+        max-width: 33.33334%;
+    }
+    .col-md-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-md-7 {
+        flex: 0 0 58.33334%;
+        max-width: 58.33334%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    } 
+     .col-md-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .col-md-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+    .col-md-11 {
+        flex: 0 0 91.66666%;
+        max-width: 91.66666%;
+    }
+}
+@media(min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+    .col-md-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-md-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-md-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-md-4 {
+        flex: 0 0 33.33334%;
+        max-width: 33.33334%;
+    } 
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }     
+}
+@media(min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .col-md-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+    .col-md-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+    .col-md-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+    .col-md-5 {
+        flex: 0 0 41.66666%;
+        max-width: 41.66666%;
+    }
+    .col-md-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+    .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-md-3-1 {
+        flex: 0 0 21%;
+        max-width: 21%;
+    }
+    .col-md-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+/*only mobile*/
+@media(max-width:668px) {
+    .menu, .search {
+        flex-direction: column;
+        display: none;
+    }
+    h1, .ligth {
+        color: white;
+    }
+    .soc-contakt {
+        justify-content: center;
+    }
+    .beauty-text {
+        color:#77767a;
+        padding: 0px 20px;
+    }
+    .green-map {
+        height: 216px;
+    }
+    section {
+        padding-bottom: 0;
+    }
+    [class*="photo-"] {
+        padding: 15px 15px;
+    }
+    .photo-about {
+        width: 290px;
+        height: 170px;
+    }
+    .itali-text {
+        margin-top: 10px;
+        padding-left: 17px;
+    }
+    .ligth-2 {
+        padding-left: 15px;
+    }
+    .gr-galeri img, .cr-galeri img, .tr-galeri img {
+        padding-top: 5px;
+        width: 280px;
+    }
+    [class*="-photo"] {
+        flex-direction: column;
+        padding: 0;
+    }
+    [class*="greece-"], [class*="tyrkey-"], [class*= "croatia-"] {
+        width: 265px;
+    }
+    [class*="-btn"] {
+        padding: 15px 10px;
+    }
+    .modal {
+        width: 95%;
+    }
+    h2 {
+        padding-left: 15px;
+    }
+    h4 {
+        font-size: 22px;        
+        padding: 15px 5px;
+    }
+    .form-fields input, .date input {
+        height: 30px;
+        margin: 3px 15px 12px;
+    }
+    form h3 {
+        font-size: 19px;
+    }
+    .btn-find {
+        width: 200px;
+    }
+    .contact {
+        width: 90%;
+        height: 200px;
+        margin: 0;
+    }
+    h5 {
+        font-size: 18px;      
+    }
+    
+}
