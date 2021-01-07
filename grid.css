@@ -296,9 +296,9 @@
     .sub-block {
         width: 280px;
         margin: 10px auto;
-    }
-    .modal-subscribe {
-        width: 320px;
+    }    
+    [class*="inform-block-"] {
+        width: 100%;
     }
     
 }
