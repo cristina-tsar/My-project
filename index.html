@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid.css">
-    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <title>My Project</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="row header-row">
-                <div class="col-md-2 logo">
+                <div class="col-xs-2 col-md-2 logo">
                     <a href=""><img src="img/logo.png" alt=""></a>
                 </div>
-                <div class="col-md-7 menu">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT US</a></li>                    
-                    <li><a href="">TOUR PACKAGES</a></li>
-                    <li><a href="">SALE</a></li>                    
-                    <li><a href="">CONTAKT</a></li>  
+                <div class="col-md-7 menu-block">
+                    <nav class="navigation menu hidden-menu">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT US</a></li>                    
+                        <li><a href="">TOUR PACKAGES</a></li>
+                        <li><a href="">SALE</a></li>                    
+                        <li><a href="">CONTAKT</a></li>
+                    </nav>                                      
+                    <nav class="nav-mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </nav>
                 </div>
                 <div class="col-md-3 search">
                     <div class="box-search">
-                        <input type="text" value="SEARCH"> 
+                        <input class="search-field" type="text" value="SEARCH"> 
                       <div class="type-buttom">                                              
                         <button class="search-submin" type="submit"></button>
                     </div>                              
@@ -41,28 +50,70 @@
         <section class="slider">
             <div class="container">
                 <div class=" row main-row enjoy-row">
-                    <div class="col-md-7"></div>
-                    <div class="col-xs-12 col-md-5 enjoy">
-                        <h1>ENJOY YOUR LIFE</h1>
-                        <p class="ligth">Scelerisque enim mi curae erat ultricies enim platea vestibulum lacinia et elit ante scelerisque vestibulum. </p>
-                    </div>
-                    <div class="col-xs-12 col-md-4 soc-contakt">
-                        <div class="soc-img">
-                            <a href=""><img src="img/icon (6).png" alt=""></a>
-                        </div>
-                        <div class="soc-img">
-                            <a href=""><img src="img/icon (4).png" alt=""></a>
-                        </div>
-                        <div class="soc-img">
-                            <a href=""><img src="img/icon (7).png" alt=""></a>
-                        </div>                                               
-                    </div>                   
+                    <div class="slider-block">
+                        <div class="slider-1">
+                            <h2>ENJOY YOUR LIFE</h2>
+                            <p class="ligth beauty-text light-slide-2">Scelerisque enim mi curae erat ultricies
+                                lobortis donec velit in per cum consectetur purus a enim
+                                platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum 
+                                 sed vulputate a duis in senectus ullamcorper lacus.
+                            </p> 
+                            <div class="soc-contakt box-contact slide-contakt">
+                                <div class="soc-img">
+                                    <a href=""><img src="img/icon (6).png" alt=""></a>
+                                </div>
+                                <div class="soc-img">
+                                    <a href=""><img src="img/icon (4).png" alt=""></a>
+                                </div>
+                                <div class="soc-img">
+                                    <a href=""><img src="img/icon (7).png" alt=""></a>
+                                </div>                                               
+                            </div>  
+                        </div>    
+                        <div class="slider-2"><h2>ENJOY YOUR LIFE</h2>
+                            <p class="ligth beauty-text light-slide-2">Scelerisque enim mi curae erat ultricies
+                                lobortis donec velit in per cum consectetur purus a enim
+                                platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum 
+                                 sed vulputate a duis in senectus ullamcorper lacus.
+                            </p>
+                            <div class="soc-contakt box-contact slide-contakt">
+                                <div class="soc-img">
+                                    <a href=""><img src="img/icon (6).png" alt=""></a>
+                                </div>
+                                <div class="soc-img">
+                                    <a href=""><img src="img/icon (4).png" alt=""></a>
+                                </div>
+                                <div class="soc-img">
+                                    <a href=""><img src="img/icon (7).png" alt=""></a>
+                                </div>                                               
+                            </div>  
+                        </div> 
+                        <div class="slider-3"><h2>ENJOY YOUR LIFE</h2>
+                            <p class="ligth beauty-text light-slide-2">Scelerisque enim mi curae erat ultricies
+                                lobortis donec velit in per cum consectetur purus a enim
+                                platea vestibulum lacinia et elit ante scelerisque vestibulum. At urna condimentum 
+                                 sed vulputate a duis in senectus ullamcorper lacus.
+                            </p>
+                            <div class="soc-contakt box-contact slide-contakt">
+                                <div class="soc-img">
+                                    <a href=""><img src="img/icon (6).png" alt=""></a>
+                                </div>
+                                <div class="soc-img">
+                                    <a href=""><img src="img/icon (4).png" alt=""></a>
+                                </div>
+                                <div class="soc-img">
+                                    <a href=""><img src="img/icon (7).png" alt=""></a>
+                                </div>                                               
+                            </div>  
+                        </div>                                                 
+                    </div>                  
+                                                
                 </div>
             </div>
         </section>
         <section class="beauty-word">
             <div class="container">
-                <div class="row main-row">
+                <div class="row main-row">                    
                     <div class="col-xs-12 title-blue">
                         <h2>BEAUTIFUL WORLD</h2>
                     </div>
@@ -225,6 +276,92 @@
                 </div>
             </div>
         </section>
+        <section class="useful-inform">
+            <div class="container">
+                <div class="row main-row">
+                    <div class="col-xs-12 title-blue inf-use">
+                        <h2>USEFUL INFORMATION</h2>
+                    </div>
+                    <div class="col-xs-12 information tabs-block">
+                        <div class="inform-block-1 tab-block">
+                            COMENTS
+                        </div> 
+                        <div class="inform-block-2 tab-block">
+                           GIFT SERTIFICATES  
+                        </div>
+                        <div class="inform-block-3 tab-block">
+                            INSURANCE  
+                        </div>
+                        <div class="inform-block-4 tab-block">
+                            VISA SUPPORT
+                        </div>
+                    </div>
+                    <div class="col-xs-12 tab-container">
+                        <div class="tab-content">
+                            <h3 class="itali-text">COMENTS</h3> 
+                            <p class="ligth-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Laborum, voluptatibus totam in. At urna condimentum 
+                                sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin 
+                                sociosqu a parturient nam ac blandit praesent aptent.
+                                Scelerisque enim mi curae erat ultricies.
+                                In senectus ullamcorper lacus cubilia. Cumque quos culpa sint
+                                 blanditiis adipisci quod repudiandae nisi
+                                 quam labore odio molestiae nobis vel. Atque, doloribus enim.
+                            </p>
+                            <p class="ligth-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Laborum, voluptatibus totam in cumque quos culpa sint
+                                     blanditiis adipisci quod repudiandae nisi
+                                     quam labore odio molestiae nobis vel. Atque, doloribus enim.
+                            </p>
+                        </div>
+                        <div class="tab-content">
+                            <h3 class="itali-text">GIFT SERTIFICATES</h3> 
+                            <p class="ligth-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Laborum, voluptatibus totam in cumque quos culpa sint
+                                 blanditiis adipisci quod repudiandae nisi
+                                 quam labore odio molestiae nobis vel. Atque, doloribus enim.</p> 
+                            <p class="ligth-2"> At urna condimentum 
+                                sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin 
+                                sociosqu a parturient nam ac blandit praesent aptent.
+                                Scelerisque enim mi curae erat ultricies.
+                                In senectus ullamcorper lacus cubilia. </p>
+                        </div>
+                        <div class="tab-content">
+                            <h3 class="itali-text">INSURANCE</h3>
+                            <p class="ligth-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Laborum, voluptatibus totam in cumque quos culpa sint
+                                 blanditiis adipisci quod repudiandae nisi
+                                 quam labore odio molestiae nobis vel. Atque, doloribus enim.</p> 
+                            <p class="ligth-2"> At urna condimentum 
+                                sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin 
+                                sociosqu a parturient nam ac blandit praesent aptent.</p>
+                            <p class="ligth-2">Scelerisque enim mi curae erat ultricies.
+                                In senectus ullamcorper lacus cubilia. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p  class="ligth-2">Laborum, voluptatibus totam in cumque quos culpa sint
+                                     blanditiis adipisci quod repudiandae nisi
+                                     quam labore odio molestiae nobis vel. Atque, doloribus enim.
+                            </p> 
+                        </div>
+                        <div class="tab-content">
+                            <h3 class="itali-text">VISA SUPPORT</h3> 
+                            <p class="ligth-2"> At urna condimentum 
+                                sed vulputate a duis in. Atque, doloribus enim. Senectus ullamcorper lacus cubilia consectetur odio proin 
+                                sociosqu a parturient nam ac blandit praesent aptent.
+                            <p class="ligth-2"> Scelerisque enim mi curae erat ultricies.
+                                In senectus ullamcorper lacus cubilia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Laborum, voluptatibus totam in cumque  At urna condimentum 
+                                sed vulputate a duis in senectus ullamcorper lacus cubilia consectetur odio proin 
+                                sociosqu a parturient nam ac blandit praesent aptent.
+                                Scelerisque enim mi curae erat ultricies.
+                                In senectus ullamcorper lacus cubilia. </p>
+                            <p class="ligth-2"> Quos culpa sint
+                                 blanditiis adipisci quod repudiandae nisi
+                                 quam labore odio molestiae nobis vel. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section> 
         <section class="pick-your-destination">
             <div class="container">
                 <div class="row main-row">
@@ -238,27 +375,27 @@
                                     <h4>Pick Your Destination</h2>                                    
                                     <div class="form-fields">
                                         <h3>Traveling From</h3>
-                                        <input type="text" placeholder="Name of toun">
+                                        <input class="form-field" type="text" placeholder="Name of toun">
                                     </div>                                   
                                     <div class="form-fields">
                                          <h3>Traveling To</h3>
-                                        <input type="text" placeholder="Name of toun">
+                                        <input class="form-field" type="text" placeholder="Name of toun">
                                     </div>                                    
                                     <div class="date">
                                         <h3>Departure Date</h3> 
-                                        <input type="date" name="calendar">
+                                        <input  class="form-field" type="date" name="calendar">
                                     </div>                                    
                                     <div class="date">
                                         <h3>Data of arrival</h3>
-                                        <input type="date" name="calendar">
+                                        <input class="form-field" type="date" name="calendar">
                                     </div> 
                                     <div class="form-fields">
                                         <h3>Number of People</h3>
-                                        <input type="number" name="num" min="1" max="25" value="1" >
+                                        <input class="form-field" type="number" name="num" min="1" max="25" value="1" >
                                     </div>
                                     <div class="form-fields">
                                         <h3>Email</h3>
-                                       <input type="email" placeholder="Your email">
+                                       <input class="form-field" type="email" placeholder="Your email">
                                    </div>  
                                     <div class="findtour-btn button-center">
                                         <button class="btn-find">Find the Tour</button>
@@ -285,138 +422,66 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>       
     </main>
-    <footer class="footer"></footer>
-    <section class="trips">
-        <div class="container">
-            <div class="row main-row">
-                <div class="col-xs-12 title-blue">
-                    <h2>THE TRIPS</h2>
-                </div>
-                <div class="col-xs-12 trip-to">
-                    <h3 class="itali-text">Greece</h3>
-                </div>
-                <div class="col-xs-12 col-md-4 greece-tour">
-                    <p>Endless Summer</p>
-                    <p>Lorem ipsum, dolor sit am. Cum perferendis voluptatem quo laudantium.</p>
-                    <p>Night:5</p>
-                    <p>Hotel: 3*</p>
-                    <p>500$</p>
-                    <div class="reserve-button">
-                        <button>RESERVE NOW</button>
-                    </div>                    
-                </div>
-                <div class="col-xs-12 col-md-4 greece-tour">
-                    <p>Sweet Autumn</p>
-                    <p>Lorem ipsum, dolor sit am. Cum perferendis voluptatem quo laudantium.</p>
-                    <p>Night:9</p>
-                    <p>Hotel: 4*</p>
-                    <p>750$</p>
-                    <div class="reserve-button">
-                        <button>RESERVE NOW</button>
+    <footer class="footer">
+        <div class="container footer">
+            <div class="row ">
+                <div class="col-md-4 col-ms-6 col-xs-12 footer-row-copyright">
+                    <div class="copyright-footer">
+                        <p>Adress: City, Street 23</p>
+                        <p>+380 (93) 546-78-82</p>
+                        <p>+380 (50) 380-30-56</p>
+                        <p>tourfirm@ukr.net</p> 
+                        <p class="copyright-text">© Copyright 2014 by PSD Booster. All rights Reserved.</p>                        
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4 greece-tour">
-                    <p>Greek dream</p>
-                    <p>Lorem ipsum, dolor sit am. Cum perferendis voluptatem quo laudantium.</p>
-                    <p>Night:7</p>
-                    <p>Hotel: 5*</p>
-                    <p>950$</p>
-                    <div class="reserve-button">
-                        <button>RESERVE NOW</button>
+                <div class="col-md-4 col-ms-6 col-xs-12 social-media-footer-row">   
+                    <div class="media-footer">
+                        <div class="google-ft"><a href=""><img src="img/icon (4).png" alt=""></a></div>
+                        <div class="fb-ft"> <a href=""><img src="img/icon (6).png" alt=""></a></div>
+                        <div class="insta-ft"><img src="img/icon (7).png" alt=""></a></div>                        
                     </div>
                 </div>
-            </div>
-            <div class="col-xs-12 trip-to">
-                <h3 class="itali-text">Greece</h3>
-            </div>
-            <div class="col-xs-12 col-md-4 greece-tour">
-                <p>Endless Summer</p>
-                <p>Lorem ipsum, dolor sit am. Cum perferendis voluptatem quo laudantium.</p>
-                <p>Night:5</p>
-                <p>Hotel: 3*</p>
-                <p>500$</p>
-                <div class="reserve-button">
-                    <button>RESERVE NOW</button>
-                </div>                    
-            </div>
-            <div class="col-xs-12 col-md-4 greece-tour">
-                <p>Sweet Autumn</p>
-                <p>Lorem ipsum, dolor sit am. Cum perferendis voluptatem quo laudantium.</p>
-                <p>Night:9</p>
-                <p>Hotel: 4*</p>
-                <p>750$</p>
-                <div class="reserve-button">
-                    <button>RESERVE NOW</button>
+                <div class="col-md-4 col-ms-6 col-xs-12 work-media-footer-row">
+                    <p>Monday-Friday: 9:00 - 18:00<br>
+                        Saturday: 10:00 - 16:00<br>  
+                        Sunday: closed</p>
+                </div> 
+            </div>            
+        </div>
+    </footer>
+   
+    <div class="modal-subscribe">
+        <div class="sub-block">
+            <form>
+                <h4 class="sub-text">Subscribe to the newsletter</h4>                                    
+                <div class="form-fields">
+                    <h3 class="sub-text-1">Your Name</h3>
+                    <input class="sub-field" type="text" placeholder="Your name">
+                </div>                                   
+                <div class="form-fields">
+                     <h3 class="sub-text-1">Your Second Name</h3>
+                    <input class="sub-field" type="text" placeholder="Your second name">
+                </div> 
+                <div class="form-fields">
+                    <h3 class="sub-text-1">Your age</h3>
+                    <input class="sub-field" type="number" name="num" min="1" max="105" value="1" >
                 </div>
-            </div>
-            <div class="col-xs-12 col-md-4 greece-tour">
-                <p>Greek dream</p>
-                <p>Lorem ipsum, dolor sit am. Cum perferendis voluptatem quo laudantium.</p>
-                <p>Night:7</p>
-                <p>Hotel: 5*</p>
-                <p>950$</p>
-                <div class="reserve-button">
-                    <button>RESERVE NOW</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-12 trip-to">
-            <h3 class="itali-text">Greece</h3>
-        </div>
-        <div class="col-xs-12 col-md-4 greece-tour">
-            <p>Endless Summer</p>
-            <p>Lorem ipsum, dolor sit am. Cum perferendis voluptatem quo laudantium.</p>
-            <p>Night:5</p>
-            <p>Hotel: 3*</p>
-            <p>500$</p>
-            <div class="reserve-button">
-                <button>RESERVE NOW</button>
-            </div>                    
-        </div>
-        <div class="col-xs-12 col-md-4 greece-tour">
-            <p>Sweet Autumn</p>
-            <p>Lorem ipsum, dolor sit am. Cum perferendis voluptatem quo laudantium.</p>
-            <p>Night:9</p>
-            <p>Hotel: 4*</p>
-            <p>750$</p>
-            <div class="reserve-button">
-                <button>RESERVE NOW</button>
-            </div>
-        </div>
-        <div class="col-xs-12 col-md-4 greece-tour">
-            <p>Greek dream</p>
-            <p>Lorem ipsum, dolor sit am. Cum perferendis voluptatem quo laudantium.</p>
-            <p>Night:7</p>
-            <p>Hotel: 5*</p>
-            <p>950$</p>
-            <div class="reserve-button">
-                <button>RESERVE NOW</button>
-            </div>
+                <div class="form-fields">
+                    <h3 class="sub-text-1">Email</h3>
+                   <input class="sub-field" type="email" placeholder="Your email">
+               </div>  
+                <div class="findtour-btn button-modal">
+                    <button class="btn-find btn-sub">Subscribe</button>
+                    <button class="btn-find btn-sub btn-close">Cansel</button>                    
+                </div>                                    
+            </form>
         </div>
     </div>
-        </div>
-    </section>
-    <div class="col-xs-12 title-blue">
-        <h2>USEFUL INFORMATION ЗРОБИТИ ЯК ТАБИ</h2>
-    </div>
-    <div class="col-xs-12 title-blue">
-        <h2>THE TRIPS ВІДГУКИ</h2>
-    </div>
-    <div class="col-xs-12 title-blue">
-        <h2>THE TRIPS ДОДАТКОВІ ПОСЛУГИ</h2>
-    </div>
-    <div class="col-md-3">
-        <h3>Подарункові сертифікати</h3>        
-    </div>
-    <div class="col-md-3">
-        <h3>Страхування</h3>        
-    </div>
-    <div class="col-md-3">
-        <h3>Візова підтримка</h3>       
-    </div>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

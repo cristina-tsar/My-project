@@ -31,6 +31,7 @@ li {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
+    border: 2px #77767a solid;
 }   
 .menu a:hover{
     border-bottom: white 2px solid;
@@ -51,7 +52,7 @@ li {
     position: relative;
     width: 150px;
 }
-input {
+.search-field{
     outline: none;   
     width: 120px;
     height: 33px;
@@ -89,11 +90,6 @@ input {
 }
 .card:hover, .type-buttom:hover, input:hover {
     border: solid 2px white;
-}
-.slider {
-    background-image: url("img/slide.jpg");
-    background-size: cover;
-    height: 500px;   
 }
 .enjoy-row {
     justify-content: flex-end;
@@ -157,11 +153,13 @@ h2 {
     padding: 30px 0px;
 }
 .beauty-text {
-    padding: 10px 50px;
+    padding: 10px 17px 0px 45px;
+    color: #0952a2;
 }
 [class*="-btn"]{
     padding: 50px 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 [class*="btn-"] {
@@ -320,7 +318,7 @@ form {
     justify-content: center;
     border: 3px solid #27a5f8;
 }
-.form-fields input, .date input {
+.form-field {
     width: 200px;
     height: 40px;
     line-height: 40px;
@@ -363,4 +361,165 @@ h5 {
     font-size: 25px;
     font-weight: 700;
     padding: 5px 30px;
+}
+.inf-use {
+    margin-bottom: 40px;
+}
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 3px solid #27a5f8;
+    padding: 15px 0;    
+}
+.information:hover {
+    border: 3px solid #77767a;
+}
+[class*="inform-block-"] {
+    width: 100%;
+    height: 150px;
+    margin: 8px;
+    padding: 9px;   
+    background-size: 95%; 
+    background-position: center;
+    background-repeat: no-repeat;   
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+}
+.inform-block-1 {
+    background-image: url(img/sea.jpg);
+}
+.inform-block-2 {
+    background-image: url(img/restorang.jpg);    
+}
+.inform-block-3 {
+    background-image: url(img/rack-sea.jpg);    
+}
+.inform-block-4 {
+    background-image: url(img/map-gold.jpg);    
+}
+footer {
+    background-color: #77767a;
+    color: white;
+    padding: 15px;
+}
+.copyright-footer {      
+    flex-basis: 56em;
+}
+.copyright-text {
+    color: white;
+    font-size: 12px;
+    padding-top: 20px;
+}
+.media-footer {
+    display: flex;  
+}
+[class*='-ft'] {
+    margin: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+}
+.social-media-footer-row {
+    display: flex;
+    justify-content: center;
+}
+.work-media-footer-row {
+    display: flex;
+    justify-content: flex-end;
+}
+.modal-subscribe {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;  
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;  
+}
+.sub-block {
+    width: 300px;
+    margin: 80px auto;
+    background-color:  #27a5f8;
+    border: solid 3px white;
+}
+.sub-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 0px;
+}    
+.sub-text-1 {
+    font-size: 20px;
+}   
+.sub-field {
+    height: 35px;
+    line-height: 35px;
+    margin: 0px 15px 10px;
+    width: 200px;
+    font-size: 16px;
+    color:  #77767a;
+}                            
+.btn-sub {
+    width: 135px;
+    height: 50px;
+}
+.button-modal {
+    padding: 0px 25px;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.tab-active {
+   color: #27a5f8;
+   background-color: #27a5f8;
+   border: 3px solid #27a5f8;
+}
+.slider-block {
+    width: 100%;    
+    color: white;
+    font-size: 50px;
+}
+.light-slide-2 {
+    width: 400px;
+}
+[class*="slider-"] {
+    background-size: cover;    
+    height: 500px; 
+}
+.slider-1 {
+    background-image: url("img/priroda.jpg");   
+}
+.slider-2 {
+    background-image: url("img/pink-sand.jpg");    
+}
+.slider-3 {
+    background-image: url("img/vare.jpg");   
+}
+.slick-prev, .slick-next {
+    top: 50%;
+}
+.slick-prev {
+    left: -43px;
+}
+.slick-next {
+    right: -18px;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 45px;
+    color: #27a5f8;
+}
+.slick-dots li button:before {
+    top: -35px;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1.75;
+    color: #f7f6f6;
 }
