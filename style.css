@@ -376,10 +376,10 @@ h5 {
     border: 3px solid #77767a;
 }
 [class*="inform-block-"] {
-    width: 100%;
+    width: 47%;
     height: 150px;
     margin: 8px;
-    padding: 9px;   
+    padding: 30px;   
     background-size: 95%; 
     background-position: center;
     background-repeat: no-repeat;   
