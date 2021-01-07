@@ -300,5 +300,8 @@
     [class*="inform-block-"] {
         width: 100%;
     }
+     [class*="inform-block-"] {
+        width: 100%;
+    }
     
 }
