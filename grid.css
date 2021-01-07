@@ -300,5 +300,8 @@
     .modal-subscribe {
         width: 320px;
     }
+     [class*="inform-block-"] {
+        width: 100%;
+    }
     
 }
